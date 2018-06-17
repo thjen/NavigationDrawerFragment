@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Note that you can set one of these elements to be default selected by using
+    android:checked="true" -->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/firstFragment"
+            android:title="First Fragment"
+            android:icon="@drawable/one"/>
+        <item android:id="@+id/secondFragment"
+            android:title="Second Fragment"
+            android:icon="@drawable/two"/>
+        <item android:id="@+id/thirdFragment"
+            android:title="Third Fragment"
+            android:icon="@drawable/three"/>
+    </group>
+
+    <item android:title="Sub Item">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:title="Sub Item 1"/>
+                <item android:title="Sub Item 2"/>
+            </group>
+        </menu>
+    </item>
+</menu>
